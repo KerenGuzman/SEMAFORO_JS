@@ -1,0 +1,35 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 50px;
+  background-color: #f0f0f0;
+}
+
+button {
+  padding: 15px 25px;
+  margin: 10px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.rojo {
+  background-color: red;
+  color: white;
+}
+
+.amarillo {
+  background-color: gold;
+}
+
+.verde {
+  background-color: green;
+  color: white;
+}
+
+#mensaje {
+  margin-top: 30px;
+  font-size: 22px;
+  font-weight: bold;
+}

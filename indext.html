@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Semáforo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Semáforo de colores</h1>
+  
+  <button class="rojo" onclick="mostrarMensaje('rojo')">Rojo</button>
+  <button class="amarillo" onclick="mostrarMensaje('amarillo')">Amarillo</button>
+  <button class="verde" onclick="mostrarMensaje('verde')">Verde</button>
+
+  <div id="mensaje"></div>
+
+  <script>
+    function mostrarMensaje(color) {
+      let texto = "";
+
+      switch(color) {
+        case 'rojo':
+          texto = "¡Alto! No puedes pasar.";
+          break;
+        case 'amarillo':
+          texto = "¡Precaución! Ve más despacio.";
+          break;
+        case 'verde':
+          texto = "¡Sigue! Puedes continuar.";
+          break;
+        default:
+          texto = "Color desconocido.";
+      }
+
+      document.getElementById("mensaje").textContent = texto;
+    }
+  </script>
+
+</body>
+</html>
